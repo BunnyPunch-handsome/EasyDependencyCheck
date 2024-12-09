@@ -1,3 +1,4 @@
+
 # EasyDependencyCheck
 
 ## Overview
@@ -12,6 +13,7 @@ This is a test version and may have some imperfections. The NVD database will be
 
 - Python 3
 - Docker
+- Git LFS (Large File Storage)
 
 ## Installation and Usage
 
@@ -22,6 +24,19 @@ docker load -i dependency-check.tar
 
 Alternatively, you can pull the latest image from Docker Hub:
 docker pull owasp/dependency-check:latest
+
+### Cloning the Repository and Pulling Large Files
+
+To clone the repository and pull all large files tracked by Git LFS, use the following steps:
+
+1. Clone the repository:
+   git clone https://github.com/BunnyPunch-handsome/EasyDependencyCheck.git
+2. Navigate to the cloned repository directory:
+   cd EasyDependencyCheck
+3. Install Git LFS (if not already installed):
+   git lfs install
+4. Pull the large files:
+   git lfs pull
 
 ### Running the Script
 
