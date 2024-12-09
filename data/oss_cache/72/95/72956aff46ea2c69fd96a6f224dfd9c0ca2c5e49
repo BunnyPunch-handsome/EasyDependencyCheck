@@ -1,0 +1,1 @@
+{"coordinates":"pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.10.0","description":"Binding between LOG4J 2 API and SLF4J","reference":"https://ossindex.sonatype.org/component/pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.10.0?utm_source\u003ddependency-check\u0026utm_medium\u003dintegration\u0026utm_content\u003d11.1.0","vulnerabilities":[],"sonatypeOssiScore":0.0}
