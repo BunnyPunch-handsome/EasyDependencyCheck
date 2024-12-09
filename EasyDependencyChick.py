@@ -98,7 +98,7 @@ def center_window():
     root.geometry('{}x{}+{}+{}'.format(width, height, x, y))
 
 root = tk.Tk()
-root.title("Jar包漏洞扫描器")
+root.title("Jar File Vulnerability Scanner")
 root.geometry("600x400")
 root.eval('tk::PlaceWindow . center')
 
