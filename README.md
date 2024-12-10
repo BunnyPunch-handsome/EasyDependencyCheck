@@ -13,35 +13,37 @@ This is a test version and may have some imperfections. The NVD database will be
 
 - Python 3
 - Docker
-- Git LFS (Large File Storage)
 
 ## Installation and Usage
 
 ### Load Dependency Check Docker Image
 
-You can load the Docker image using the provided tar file:
-docker load -i dependency-check.tar
+You can pull the latest image from Docker Hub:
 
-Alternatively, you can pull the latest image from Docker Hub:
-docker pull owasp/dependency-check:latest
+```bash
+docker pull obsidian6362/easy-dependency-check:latest
+```
 
-### Cloning the Repository and Pulling Large Files
+### Cloning the Repository
 
-To clone the repository and pull all large files tracked by Git LFS, use the following steps:
+To clone the repository, use the following steps:
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/BunnyPunch-handsome/EasyDependencyCheck.git
+   ```
 2. Navigate to the cloned repository directory:
+   ```bash
    cd EasyDependencyCheck
-3. Install Git LFS (if not already installed):
-   git lfs install
-4. Pull the large files:
-   git lfs pull
+   ```
 
 ### Running the Script
 
 To run the script, execute the following command:
+
+```bash
 python EasyDependencyCheck.py
+```
 
 ### Script Interface Usage
 
@@ -53,8 +55,6 @@ python EasyDependencyCheck.py
 
 ### Folder Structure
 
-- /data: Contains the vulnerability database information.
-- /tar: Contains the Dependency Check Docker image.
 - EasyDependencyCheck.py: The main script file for running the vulnerability scans.
 - README.md: This documentation file.
 
