@@ -18,32 +18,25 @@ This is a test version and may have some imperfections. The NVD database will be
 
 ### Load Dependency Check Docker Image
 
-You can pull the latest image from Docker Hub:
-
-```bash
-docker pull obsidian6362/easy-dependency-check:latest
-```
+You can pull the latest image from Docker Hub: docker pull obsidian6362/easy-dependency-check:latest.
 
 ### Cloning the Repository
 
-To clone the repository, use the following steps:
+1. Clone the repository: git clone https://github.com/BunnyPunch-handsome/EasyDependencyCheck.git.
+2. Navigate to the cloned repository directory: cd EasyDependencyCheck.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/BunnyPunch-handsome/EasyDependencyCheck.git
-   ```
-2. Navigate to the cloned repository directory:
-   ```bash
-   cd EasyDependencyCheck
-   ```
+### Running the Script or Executable File
 
-### Running the Script
+You can either run the script using Python or use the pre-built executable file (for Windows).
 
-To run the script, execute the following command:
+#### Using Python Script
 
-```bash
-python EasyDependencyCheck.py
-```
+To run the script, execute the following command: python EasyDependencyCheck.py.
+
+#### Using Executable File (Windows)
+
+1. Download the pre-built executable file from the releases page.
+2. Run the executable file by double-clicking it.
 
 ### Script Interface Usage
 
