@@ -20,7 +20,7 @@ This is a test version and may have some imperfections. The NVD database will be
 
 ### Load Dependency Check Docker Image
 
-You can pull the latest image from Docker Hub: docker pull obsidian6362/easy-dependency-check:latest.
+You can pull the latest image from Docker Hub: docker pull obsidian6362/easy-dependency-check:latest
 
 ### Cloning the Repository
 
