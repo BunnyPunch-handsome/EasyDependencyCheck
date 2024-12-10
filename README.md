@@ -11,7 +11,7 @@ This is a test version and may have some imperfections. The NVD database will be
 
 ## Requirements
 
-- Python 3
+- Python 3  (If you use an exe to run the program, then the Python environment is not necessary)
 - Docker
 
 ## Installation and Usage
