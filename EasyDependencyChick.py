@@ -28,8 +28,6 @@ def run_scan():
         messagebox.showwarning("Warning", "Please fill in all the paths.")
         return
     
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    data_path = os.path.join(script_dir, "data")
     jar_name = os.path.splitext(os.path.basename(jar_path))[0]
     
     if update_option == "Yes":
@@ -37,9 +35,9 @@ def run_scan():
         if not nvd_key:
             messagebox.showwarning("Warning", "Please enter the NVD API key.")
             return
-        command = f'docker run --rm -v "{report_path}:/report" -v "{data_path}:/usr/share/dependency-check/data" -v "{os.path.dirname(jar_path)}:/app" owasp/dependency-check:latest --project "{jar_name}" --scan "/app/{os.path.basename(jar_path)}" --format "HTML" --out /report --nvdApiKey {nvd_key}'
+        command = f'docker run --rm -v "{report_path}:/report" -v "{os.path.dirname(jar_path)}:/app" easy-dependency-check:latest --project "{jar_name}" --scan "/app/{os.path.basename(jar_path)}" --format "HTML" --out /report --nvdApiKey {nvd_key}'
     else:
-        command = f'docker run --rm -v "{report_path}:/report" -v "{data_path}:/usr/share/dependency-check/data" -v "{os.path.dirname(jar_path)}:/app" owasp/dependency-check:latest --project "{jar_name}" --scan "/app/{os.path.basename(jar_path)}" --format "HTML" --out /report --noupdate'
+        command = f'docker run --rm -v "{report_path}:/report" -v "{os.path.dirname(jar_path)}:/app" easy-dependency-check:latest --project "{jar_name}" --scan "/app/{os.path.basename(jar_path)}" --format "HTML" --out /report --noupdate'
     
     progress_bar.grid(row=9, columnspan=3, pady=10, sticky=(tk.W, tk.E))
     progress_bar.start()
